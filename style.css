@@ -1,0 +1,57 @@
+* ,
+* ::after,
+* ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "input-serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #18182a;
+    color: #68ff00;
+    list-style: none;
+}
+
+#pageWrapper {
+    width: 100vw;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+}
+
+#campersPicked {
+    padding: 1%;
+    font-size: 1.5em;
+    width: fit-content;
+    border: 2px solid #68ff00;
+    border-radius: 5px;
+    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+  }
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 20px;
+    width: 250px;
+    border: none;
+    color: #68ff00;
+    border-radius: 5px;
+    background-color: #18182a;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #18182a;
+    transform: translateY(-5px);
+    background-color: #68ff00;
+}
