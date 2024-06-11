@@ -1,57 +1,38 @@
-* ,
-* ::after,
-* ::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing : border-box;
+	padding    : 0;
+	margin     : 0;
 }
 
-body {
-    font-family: "input-serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: #18182a;
-    color: #68ff00;
-    list-style: none;
+#wrapper {
+	font-family     : Monospaced, sans-serif;
+	position        : absolute;
+	top             : 50%;
+	left            : 50%;
+	transform       : translate(-50%, -50%);
+	width           : 250px;
+	padding         : 1rem;
+	border-radius   : 20px;
+	background      : #FFF;
+	gap             : 1rem;
+	box-shadow      : 30px 30px 60px #B8B8B8,
+	-30px -30px 60px #FFF;
+	aspect-ratio    : 1/1;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	flex-flow       : column nowrap;
 }
-
-#pageWrapper {
-    width: 100vw;
-    padding: 50px;
-    display: flex;
-    gap: 20px;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2em;
-}
-
-#campersPicked {
-    padding: 1%;
-    font-size: 1.5em;
-    width: fit-content;
-    border: 2px solid #68ff00;
-    border-radius: 5px;
-    text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
-  }
 
 button {
-    font-family: inherit;
-    font-size: inherit;
-    padding: 10px 20px;
-    width: 250px;
-    border: none;
-    color: #68ff00;
-    border-radius: 5px;
-    background-color: #18182a;
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    color: #18182a;
-    transform: translateY(-5px);
-    background-color: #68ff00;
+	font             : inherit;
+	padding          : 0.8rem;
+	font-size        : 1.2rem;
+	border           : none;
+	color            : #FFF;
+	border-radius    : 2rem;
+	background-color : #CD443E;
+	cursor           : pointer;
 }
